@@ -1,0 +1,75 @@
+.table, table {
+  width: 100%;
+  text-align: left;
+  border-radius: 2px 2px 0 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000d9;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.table__head > tr > th:not(:last-child):before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 1.6em;
+  background-color: #0000000f;
+  transform: translateY(-50%);
+  transition: background-color .3s;
+  content: "";
+}
+
+.table__head > tr > th {
+  position: relative;
+  color: #000000d9;
+  font-weight: 500;
+  text-align: left;
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background .3s ease;
+}
+
+.table__body > tr > td {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background .3s;
+}
+
+.table__column-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table__column-sorted {
+  background-color: #fafafa;
+}
+
+.table__head-cell,
+.table__body-cell {
+  padding: 10px;
+}
+
+.table__sortable:hover {
+ background-color: #f5f5f5;
+}
+
+.table__body > tr:hover {
+  background-color: #fafafa;
+  transform: background-color .3s;
+}
+
+.table__sort-img {
+  width: 20px;
+}

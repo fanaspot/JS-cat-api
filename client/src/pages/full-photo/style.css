@@ -1,0 +1,42 @@
+.full-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-photo__image {
+  max-width: 600px;
+}
+
+.full-photo__back-btn {
+  display: flex;
+  background: #1890ff;
+  color: #fff;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 3px;
+  align-items:center;
+  justify-content: center;
+  width: 75px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.full-photo__back-btn:hover {
+  background-color: #40a9ff;
+}
+
+.full-photo__back-btn:active {
+  background-color: #096dd9;
+}
+
+.full-photo__back-btn img {
+  margin-right: 5px;
+  width: 16px;
+}
+
+.full-photo__back-btn span {
+  display: inline-block;
+  font-size: 16px;
+}

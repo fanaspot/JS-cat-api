@@ -1,0 +1,13 @@
+
+.images-list {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 670px;
+}
+.images-list__img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}

@@ -1,0 +1,87 @@
+.select {
+  font-size: 18px;
+}
+
+.select__center-block {
+  position: relative;
+  width:250px;
+  margin: 0 auto;
+}
+
+.select__option-block {
+  background-color: #fff;
+  border: 1px solid #e0e3e8;
+  border-radius: 2px;
+  padding: 10px 15px;
+  min-height: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.select__option-block:hover {
+  border-color: #5468ff;
+  transition: .2s;
+}
+
+.select__option-list {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 0 0 hsla(0,0%,100%,.5),0 3px 8px 0 #555a64;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  width:inherit;
+  max-height: 200px;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.select__option-list .select__option-block {
+  border: none;
+}
+
+.select__option-list .select__option-block:not(.select__selected-option):hover {
+  background-color: #e2e4e5;
+  transition: .2s;
+}
+
+
+.select__option {
+  background-color: #bbb;
+  width: max-content;
+}
+
+.select_hide {
+  display: none;
+}
+
+.select_active,
+.select__selected-option {
+  font-weight: bold;
+  background-color: #97f2f8;
+}
+
+.select_opacity {
+  color: #dadada;
+}
+
+/*===== ScrollBar =====*/
+
+.select__option-list::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+.select__option-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dadada;
+}
+
+.select__option-list::-webkit-scrollbar-track {
+  background-color: #fff;
+}
